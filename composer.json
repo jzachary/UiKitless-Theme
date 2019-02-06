@@ -1,0 +1,9 @@
+{
+    "name": "crt/mentoruikit-theme",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Crt\\MentoruikitTheme\\": "src/"
+        }
+    }
+}
