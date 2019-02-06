@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+   {{ config_get("streams::distribution.name") }} &#8250; {{ trans(template.meta_title) }}
+</title>
+
+{{ asset_add("theme.css", "theme::less/uikit.less", ["live"]) }}
+
+
+
+{{ asset_add("theme.js", "theme::js/uikit.min.js") }}
+{{ asset_add("theme.js", "theme::js/uikit-icons.min.js") }}
+
+{{ html_style(asset_path("theme.css")) }}
+{{ html_script(asset_path("theme.js")) }}
+
+<script src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
+{{ constants() }}
