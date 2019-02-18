@@ -2,20 +2,16 @@
 <html lang="en">
 <head>
   {% block metadata %}
-      {% include "theme::partials/metadata" %}
+      {% include "theme::partials/doc-header" %}
   {% endblock %}
 </head>
-
 <body>
 
-
-
-
-
+{% block content %}{% endblock %}
 
 
   {% block footer %}
-      {% include "theme::partials/footer" %}
+      {% include "theme::partials/doc-footer" %}
   {% endblock %}
 </body>
 </html>
