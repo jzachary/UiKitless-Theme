@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>
-   {{ config_get("streams::distribution.name") }} &#8250; {{ trans(template.meta_title) }}
+   {{ config_get("app.name") }} &#8250; {{ trans(template.meta_title) }}
 </title>
 
 {{ asset_add("theme.css", "theme::less/uikit.less", ["live"]) }}
