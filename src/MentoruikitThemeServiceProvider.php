@@ -116,10 +116,10 @@ class MentoruikitThemeServiceProvider extends AddonServiceProvider
      *
      * @type array|null
      */
-    protected $overrides = [
-        //'streams::errors/404' => 'module::errors/404',
-        //'streams::errors/500' => 'module::errors/500',
-    ];
+     protected $overrides = [
+         'streams::errors/404' => 'theme::errors/404',
+         'streams::errors/500' => 'theme::errors/500',
+     ];
 
     /**
      * The addon mobile-only view overrides.
