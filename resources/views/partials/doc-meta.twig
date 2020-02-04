@@ -1,0 +1,23 @@
+
+<!-- Meta -->
+<meta name='title' content='{{ config_get("app.name") }}'>
+<meta name='description' content='{{ config_get("app.description") }}'>
+<meta name="author" content=" ">
+<meta name="Copyright" content="Copyright &copy; 2019, ">
+<meta name='keywords' content=' '>
+<meta name='image' content=''>
+
+<meta property="og:url"         content=" " />
+<meta property="og:site_name"   content="{{ config_get("app.name") }}">
+<meta property="og:type"        content="website" />
+<meta property="og:title"       content="{{ config_get("app.name") }} &#8250; {{ trans(template.meta_title) }}" />
+<meta property="og:description" content="{{ config_get("app.description") }}" />
+<meta property="og:image"       content="" 'og:image:width' and 'og:image:height'/>
+
+<!-- Favicons -->
+{{ favicons("theme::img/favicon.png") }}
+
+<!-- iOS -->
+<link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
