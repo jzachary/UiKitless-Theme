@@ -43,11 +43,19 @@
 /* Directions
  ========================================================================== */
 
+/*
+ * 1. Prevent content overflow if `max-width: 100%` is used inside position container.
+ */
+
 [class*='uk-position-top'],
 [class*='uk-position-bottom'],
 [class*='uk-position-left'],
 [class*='uk-position-right'],
-[class*='uk-position-center'] { position: absolute !important; }
+[class*='uk-position-center'] {
+    position: absolute !important;
+    /* 1 */
+    max-width: 100%;
+}
 
 
 /* Edges
@@ -112,7 +120,6 @@
     left: 50%;
     transform: translate(-50%,-50%);
     /* 1 */
-    width: -moz-max-content;
     width: max-content;
     max-width: 100%;
     box-sizing: border-box;
@@ -130,13 +137,11 @@
 
 .uk-position-center-left-out {
     right: 100%;
-    width: -moz-max-content;
     width: max-content;
 }
 
 .uk-position-center-right-out {
     left: 100%;
-    width: -moz-max-content;
     width: max-content;
 }
 
@@ -146,7 +151,6 @@
     left: 50%;
     transform: translateX(-50%);
     /* 1 */
-    width: -moz-max-content;
     width: max-content;
     max-width: 100%;
     box-sizing: border-box;
